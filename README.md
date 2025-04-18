@@ -1,29 +1,27 @@
-# 🎧 Python AudioBook
+# Python Audiobook
 
-**Python AudioBook** is a simple yet powerful Python application that converts text into speech, making it easy to listen to your favorite books or written content. Whether you're multitasking, studying, or improving accessibility, this tool has got you covered.
+*A simple Python script that converts text files into audiobooks using the Google Text-to-Speech (gTTS) library.*
 
----
 
-## 📌 Features
+## Requirements
+- Python 3.x
+- gTTS library (pip install gTTS)
 
-- 🔊 Converts plain text or `.txt` files to speech
-- 💾 Saves speech as MP3 files
-- ⚙️ Adjustable voice rate and volume
-- 🗣️ Supports multiple voices (platform-dependent)
-- 🖥️ Easy-to-use command-line interface
+## Usage
+1. Install the required library by running pip install gTTS in your terminal/command prompt.
+2. Replace "denzel.txt" with the path to your desired text file.
+3. Run the script using Python (e.g., python audiobook.py).
+4. The script will create an MP3 file with the same name as the text file but with an .mp3 extension.
+5. Optionally, the script can play the audiobook automatically (Windows only).
 
----
+## Notes
+- Make sure the text file is encoded in UTF-8 for proper reading.
+- The script uses the English language by default (lang="en"). You can change this to support other languages.
+- The audiobook will be saved in the same directory as the script.
 
-## 🛠️ Built With
+## Future Improvements
+- Build a UI using either tkinter or django
+- Add option to customize the audiobook's voice and speed
 
-- [Python](https://www.python.org/)
-- [`pyttsx3`](https://pypi.org/project/pyttsx3/) – Text-to-speech library for offline TTS
-
----
-
-## 📦 Installation
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/python-audiobook.git
-   cd python-audiobook
+## Contributing
+Feel free to modify and improve the script to suit your needs. Pull requests and suggestions are welcome!
